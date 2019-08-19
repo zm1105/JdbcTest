@@ -3,7 +3,6 @@ package Jdbc;
 import java.sql.*;
 
 public class JdbcInsertDemo02 {
-    //
     public static void main(String[] args) {
         Statement statement = null;
         Connection connection = null;
