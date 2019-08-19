@@ -47,8 +47,6 @@ public class JdbcSelectDemo04 {
                     e.printStackTrace();
                 }
             }
-
         }
-
     }
 }
