@@ -11,7 +11,7 @@ public class JdbcDemo05 {
 //        Find find = new Find();
 //        List<User> all = find.findAll();
 //        System.out.println(all);
-        List<User> list=new Find().findAll();
+        List<User> list = new Find().findAll();
         System.out.println(list);
         System.out.println(list.size());
     }

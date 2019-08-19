@@ -43,13 +43,15 @@ public class Find {
                     e.printStackTrace();
                 }
             }
-        } if (statement != null) {
+        }
+        if (statement != null) {
             try {
                 statement.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        } if (connection != null) {
+        }
+        if (connection != null) {
             try {
                 connection.close();
             } catch (SQLException e) {
