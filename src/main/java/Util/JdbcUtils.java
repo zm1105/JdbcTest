@@ -28,13 +28,16 @@ public class JdbcUtils {
             url = properties.getProperty(url);
             user = properties.getProperty(user);
             password = properties.getProperty(password);
-            driver = properties.getProperty(driver);
-            //DriverManager.registerDriver(new Driver());
+            //driver = properties.getProperty(driver);
+
+                //注册驱动
             try {
-                DriverManager.registerDriver(new Driver());
-            } catch (SQLException e) {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+            } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
+            properties.load(JdbcUtils.class.getClassLoader().getResourceAsStream("jdbc.properties"));
+
 
             System.out.println("注册驱动成功");
 

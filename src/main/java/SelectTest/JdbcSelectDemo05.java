@@ -1,4 +1,4 @@
-package Jdbc;
+package SelectTest;
 
 import com.mysql.cj.jdbc.Driver;
 
