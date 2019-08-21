@@ -84,7 +84,7 @@ public class JdbcDruidUtil {
     /**
      * 获取连接池
      */
-    public static DataSource getDs() {
+    public static DataSource getDataSource() {
         return ds;
     }
 }
