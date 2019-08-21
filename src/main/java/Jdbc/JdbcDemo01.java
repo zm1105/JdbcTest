@@ -30,7 +30,9 @@ public class JdbcDemo01 {
             System.out.println(name);
         }
         //释放资源
+        resultSet.close();
         statement.close();
         connection.close();
+
     }
 }
